@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv ="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script type="text/javascript" src="JS/jquery-foundation-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="head_border">
+            <h1>高雄旅遊資訊</h1>
+        </div>
+
+        <div class="hot">
+            <h2>熱門景點地區</h2>
+            <input type="button" value="三民區" class="hot_place">
+            <input type="button" value="前鎮區" class="hot_place">
+            <input type="button" value="左營區" class="hot_place">
+            <input type="button" value="岡山區" class="hot_place">
+            <div class="select_all">
+                <p class="select_title">請選擇行政區</p>
+                <select id="selectId">
+                    <!-- <option value="--請選擇行政區--">--請選擇行政區--</option> -->\
+                    <!-- 鹽埕區、大寮區、鳥松區、林園區、大社區、路竹區沒有資料 -->
+                    <option value="三民區">三民區</option>
+                    <option value="楠梓區">楠梓區</option>
+                    <option value="左營區">左營區</option>
+                    <option value="鼓山區">鼓山區</option>
+                    <option value="鹽埕區">鹽埕區</option>
+                    <!-- ****************************** -->
+                    <option value="前金區">前金區</option>
+                    <option value="新興區">新興區</option>
+                    <option value="苓雅區">苓雅區</option>
+                    <option value="前鎮區">前鎮區</option>
+                    <option value="旗津區">旗津區</option>
+                    <!-- ****************************** -->
+                    <option value="小港區">小港區</option>
+                    <option value="大寮區">大寮區</option>
+                    <option value="鳥松區">鳥松區</option>
+                    <option value="林園區">林園區</option>
+                    <option value="仁武區">仁武區</option>
+                    <!-- ****************************** -->
+                    <option value="大樹區">大樹區</option>
+                    <option value="大社區">大社區</option>
+                    <option value="岡山區">岡山區</option>
+                    <option value="路竹區">路竹區</option>
+                    <option value="橋頭區">橋頭區</option>
+                    <!-- ****************************** -->
+                    <option value="梓官區">梓官區</option>
+                    <option value="彌陀區">彌陀區</option>
+                    <option value="永安區">永安區</option>
+                    <option value="燕巢區">燕巢區</option>
+                    <option value="田寮區">田寮區</option>
+                    <!-- ****************************** -->
+                    <option value="阿蓮區">阿蓮區</option>
+                    <option value="茄萣區">茄萣區</option>
+                    <option value="湖內區">湖內區</option>
+                    <option value="旗山區">旗山區</option>
+                    <option value="美濃區">美濃區</option>
+                    <!-- ****************************** -->
+                    <option value="內門區">內門區</option>
+                    <option value="杉林區">杉林區</option>
+                    <option value="甲仙區">甲仙區</option>
+                    <option value="六龜區">六龜區</option>
+                    <option value="茂林區">茂林區</option>
+                    <!-- ****************************** -->
+                    <option value="桃源區">桃源區</option>
+                    <option value="茂林區">茂林區</option>
+                    <option value="甲仙區">甲仙區</option>
+                    <option value="六龜區">六龜區</option>
+                    <option value="那瑪夏區">那瑪夏區</option>
+                    <!-- ****************************** -->
+
+                </select>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <!-- <h3 class="list_title">苓雅區</h3> -->
+
+        <div class="container list_all">
+            <!-- <li class="list_data">
+                    <a href="http://kh2.khakka.org.tw/webeip/HT00567/kh2.asp" target="_blank">
+                        <div class="image" style="background-image: url(http://khh.travel/FileArtPic.ashx?id=3289&w=1280&h=960);">
+                            <div class="img_shadow">
+                                <p class="title">褒忠義民廟</p>
+                            </div>
+                        </div>
+        
+                        <table class="inform_table">
+                            <tr class="inform">
+                                <td class="inform_img">
+                                    <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png">
+                                </td>
+                                <td>
+                                    <span class="inform_txt">開放時間</span>
+                                </td>
+                            </tr>
+                            <tr class="inform">
+                                <td class="inform_img">
+                                    <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png">
+                                </td>
+                                <td>
+                                    <span class="inform_txt">地址</span>
+                                </td>
+                            </tr>
+        
+                            <tr class="inform phone_list">
+                                <td class="inform_img">
+                                    <img src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png">
+                                </td>
+                                <td>
+                                    <span class="inform_txt">電話</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="inform_web">
+                                    <span class="inform_txt">前往網站</span>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </a>
+                </li> -->
+        </div>
+
+
+        <div class="clearfix"></div>
+    </main>
+
+    <footer>
+        <h3>高雄旅遊網</h3>
+        <p class="source">資料來源 : 高雄市政府</p>
+        <p class="practice">個人練習用，無商業用途</p>
+    </footer>
+
+    <script src="JS/all.js"></script>
+</body>
+
+</html>
