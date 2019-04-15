@@ -346,9 +346,9 @@ footer .practice {
         grid-template-columns: 1fr 1fr;
     }
 
-    .hot {
+    /* .hot {
         width: 50%;
-    }
+    } */
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -356,9 +356,9 @@ footer .practice {
         grid-template-columns: 1fr;
     }
 
-    .hot {
+    /* .hot {
         width: 50%;
-    }
+    } */
 
     .hot_place {
         width: 35%;
