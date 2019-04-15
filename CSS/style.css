@@ -84,6 +84,9 @@ h1 {
 
 /* 選擇 */
 
+main {
+    min-height: 100vh - 70px
+}
 
 .hot {
     color: #ffe07b;
@@ -163,10 +166,15 @@ main {
 /* 列表 */
 
 .list_all {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    grid-gap: 25px;
+    grid-gap: 25px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5px;
+    gap: 10px;
     width: 80%;
     margin: 40px auto;
     text-align: left;
@@ -175,6 +183,17 @@ main {
 /* .clearfix {
     clear: both;
 } */
+
+.list_data {
+    /* display: inline-block; */
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: 0.2s ease-in-out;
+    width: 30.7%;
+    /* flex-grow: 1; */
+    list-style-type: none;
+    margin: 10px;
+}
+
 
 .list_title {
     width: 120px;
@@ -185,14 +204,6 @@ main {
     text-align: center;
     background-color: rgb(0, 0, 0, 0.5);
     font-weight: bold;
-}
-
-
-.list_data {
-    display: inline-block;
-    background-color: rgb(0, 0, 0, 0.6);
-    transition: 0.2s ease-in-out;
-    
 }
 
 .list_data:hover {
@@ -310,10 +321,10 @@ td {
 /* 頁尾 */
 footer {
     position: relative;
-    top: 200px;
-    margin: 50px 0 -100px 0;
+    /* top: 200px;
+    margin: 50px 0 -100px 0; */
     /* width: 100%; */
-    /* height: 90px; */
+    height: 70px;
     line-height: 16px;
     background-color: rgb(0, 0, 0, 0.6);
     line-height: 26px;
@@ -342,8 +353,12 @@ footer .practice {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .list_all {
+    /* .list_all {
         grid-template-columns: 1fr 1fr;
+    } */
+
+    .list_data {
+        width: 46.5%;
     }
 
     /* .hot {
@@ -352,8 +367,12 @@ footer .practice {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .list_all {
+    /* .list_all {
         grid-template-columns: 1fr;
+    } */
+
+    .list_data {
+        width: 100%;
     }
 
     /* .hot {
@@ -367,7 +386,11 @@ footer .practice {
 
 @media (max-width: 575.98px) {
     .list_all {
-        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .list_data {
+        width: 100%;
     }
 
     .hot {
